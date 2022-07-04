@@ -42,9 +42,11 @@ main {
     background-size: cover;
 }
 
-/* .profile__description {
-
-} */
+.profile__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .profile__description h1 {
     font-size: 3rem;
@@ -73,12 +75,10 @@ main {
     background-size: cover;
 }
 
-.description__button .linkedin {
-    background-image: url('./assets/linkedin-logo.png');
-}
-
-.description__button .github {
-    background-image: url('./assets/github-logo.png');
+.description__button img {
+    height: 24px;
+    width: 24px;
+    margin: 8px;
 }
 
 .profile__buttons {
@@ -96,6 +96,8 @@ main {
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 .buttons--first {
