@@ -1,0 +1,101 @@
+:root {
+    --main-orange: #f46524;
+    --main-blue: #223458;
+    --main-background: #e8dbc7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--main-blue);
+}
+
+main {
+    display: flex;
+}
+
+.profile-main-container {
+    width: 30vw;
+    height: 100vh;
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 0 10px black;
+}
+
+.profile__background-image {
+    height: 30vw;
+    width: 30vw;
+    margin-bottom: 25px;
+    border: none;
+    background-image: url('./assets/background-profile-pic.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .profile__description {
+
+} */
+
+.profile__description h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.profile__description h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--main-orange);
+    margin-bottom: 12px;
+}
+
+.profile__description a {
+    height: 20px;
+    width: 20px;
+}
+
+.description__button {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.description__button .linkedin {
+    background-image: url('./assets/linkedin-logo.png');
+}
+
+.description__button .github {
+    background-image: url('./assets/github-logo.png');
+}
+
+.profile__buttons {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 24px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.profile__buttons a {
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons--first {
+    border-right: 2px solid black;
+}
