@@ -81,6 +81,17 @@ main {
     margin: 8px;
 }
 
+.github img:hover {
+    transform: rotate(-0.0625turn);
+}
+.linkedin img:hover {
+    transform: rotate(0.0625turn);
+}
+
+.profile__description .linkedin img {
+    width: 27.12px;
+}
+
 .profile__buttons {
     position: absolute;
     bottom: 0;
@@ -88,6 +99,11 @@ main {
     height: 28px;
     width: 100%;
     justify-content: space-evenly;
+}
+
+.profile__buttons a:hover {
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 .profile__buttons a {
@@ -233,7 +249,9 @@ main {
     /* display: inline-block; */
     border: 1px solid black;
     border-radius: 6px;
-    margin-right: 16px;
+    margin: 16px 8px;
+    /* margin-top: 16px;
+    margin-right: 16px; */
     background-color: var(--main-blue);
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
@@ -268,6 +286,10 @@ main {
     font-size: 1.2rem;
     margin-left: 24px;
     margin-bottom: 8px;
+}
+
+.projects__article:hover {
+    transform: scale(1.05, 1.05);
 }
 
 @media (max-width: 1180px) {
