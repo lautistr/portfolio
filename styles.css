@@ -29,6 +29,7 @@ main {
     align-items: center;
     position: relative;
     box-shadow: 2px 0 10px black;
+    z-index: 1;
 }
 
 .profile__background-image {
@@ -209,6 +210,8 @@ main {
 }
 
 .projects-main-container {
+    position: relative;
+    z-index: 0;
     height: 49.5vh;
     padding: 32px;
     background-color: var(--main-background);
@@ -230,6 +233,38 @@ main {
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.100) 1%, var(--main-blue) 50%, rgba(0, 0, 0, 0.100) 100%);
     height: 1px;
     display: block;
+}
+
+.projects__arrow {
+    position: absolute;
+    top: 180px;
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    cursor: pointer;
+} 
+
+.projects__arrow img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.projects__arrow img {
+    height: 40px;
+    width: 80px;
+    -webkit-filter: drop-shadow(5px 5px 5px 1px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px 1px rgba(0, 0, 0, 0.5));
+}
+
+.left {
+    left: 24px;
+    transform: rotate(90deg);
+}
+/* .left:hover {
+    transform: rotate(90deg);
+} */
+.right {
+    right: 24px;
+    transform: rotate(270deg);
 }
 
 .projects__horizontal-scroll-container {
@@ -386,6 +421,10 @@ main {
 
     .info__extra li {
         margin-bottom: 5px;
+    }
+
+    .projects__arrow {
+        display: none;
     }
     
 }
