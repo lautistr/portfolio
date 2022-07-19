@@ -258,6 +258,7 @@ main {
 .left {
     left: 24px;
     transform: rotate(90deg);
+    display: none;
 }
 /* .left:hover {
     transform: rotate(90deg);
@@ -274,6 +275,7 @@ main {
     overflow-y: hidden;
     white-space: nowrap;
     height: 80%;
+    scroll-behavior: smooth;
 }
 
 .projects__horizontal-scroll-container::-webkit-scrollbar {
