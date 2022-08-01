@@ -237,7 +237,9 @@ main {
 
 .projects__arrow {
     position: absolute;
-    top: 180px;
+    top: 187px;
+    width: 200px;
+    height: 60px;
     border: none;
     background-color: transparent;
     z-index: 5;
@@ -256,16 +258,22 @@ main {
 }
 
 .left {
-    left: 24px;
+    left: -36px;
     transform: rotate(90deg);
     display: none;
+    background: linear-gradient(to bottom, 
+    rgb(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.15) 100%);
 }
-/* .left:hover {
-    transform: rotate(90deg);
-} */
+
 .right {
-    right: 24px;
+    right: -36px;
     transform: rotate(270deg);
+    background: linear-gradient(to bottom, 
+    rgb(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.15) 100%);
 }
 
 .projects__horizontal-scroll-container {

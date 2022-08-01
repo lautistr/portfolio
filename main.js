@@ -20,7 +20,6 @@ const scrollLocation = () => {
         buttonRight.style.display = 'block';
     }
 }
-// scrollLocation()
 
 buttonRight.onclick = function () {
     scrollContainer.scrollLeft += 754;
